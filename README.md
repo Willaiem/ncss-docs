@@ -29,7 +29,8 @@ Named Cascading Style Sheets are divided into:
 
 ### Namespaces
 Pick a namespace once you provide your library to a third party or need to prevent naming conflicts inside your project.
-Syntax
+
+#### Syntax
 
 ```
 .{namespace}-{context}
