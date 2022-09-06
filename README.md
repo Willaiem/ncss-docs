@@ -287,3 +287,153 @@ A simplified management for spaces and dimensions of HTML elements.
 | 6      | 0.75  |
 | 7      | 0.875 |
 | 8      | 1     |
+
+## Examples
+### Example Basics
+Different examples based on the NCSS convention.
+
+### Example Layout
+#### HTML
+```html
+<!-- header -->
+
+<header id="header" class="foo-header"> 
+	<h1 class="foo-title-header">Website</h1>
+</header>
+
+<!-- main -->
+
+<main class="foo-main foo-wrapper">
+
+	<!-- content -->
+
+	<article id="content" class="foo-content">
+		<h2 class="foo-title-content">Headline</h2>
+		<div class="foo-box-content">Box</div>
+	</article>
+
+	<!-- sidebar -->
+
+	<aside id="sidebar" class="foo-sidebar">
+		<h3 class="foo-title-sidebar">Headline</h3>
+		<p class="foo-text-sidebar">Text</p>
+	</aside>
+
+</main>
+
+<!-- footer -->
+
+<footer id="footer" class="foo-footer">
+	<div class="foo-box-footer">Powered by NCSS</div>
+</footer>
+```
+#### CSS
+```css
+/**
+ * @tableofcontents
+ *
+ * 1. layout
+ */
+
+/** @section 1. layout */
+
+.foo-main {
+}
+
+.foo-content {
+}
+
+.foo-sidebar {
+}
+```
+### Example Menu
+#### HTML
+```html
+<!-- status -->
+
+<input id="status-menu" class="foo-fn-status-menu" type="checkbox">
+
+<div class="foo-has-menu">
+
+	<!-- logic -->
+
+	<label class="foo-fn-toggle-menu foo-label-toggle-menu" for="status-menu"></label>
+	<label class="foo-fn-close-menu foo-label-close-menu" for="status-menu"></label>
+
+	<!-- list -->
+
+	<ul class="foo-fn-menu foo-list-menu">
+		<li>Item</li>
+	</ul>
+
+</div>
+```
+#### CSS
+```css
+/**
+ * @tableofcontents
+ *
+ * 1. logic
+ * 2. list
+ */
+
+/** @section 1. logic */
+
+.foo-fn-status-menu,
+.foo-fn-status-menu:not(:checked) + .foo-has-menu .foo-fn-menu,
+.foo-fn-status-menu:not(:checked) + .foo-has-menu .foo-fn-close-menu {
+	display: none;
+}
+
+/** @section 2. list */
+
+.foo-list-menu {
+}
+```
+### Example Form
+#### HTML
+```html
+<form class="foo-form-default foo-form-login">
+
+	<!-- legend -->
+
+	<legend class="foo-legend-default"></legend>
+
+	<!-- list -->
+
+	<ul>
+		<li>
+			<label class="foo-label-default" for="user">User</label>
+			<input id="user" class="foo-field-default foo-field-text" name="user" />
+		</li>
+		<li>
+			<label class="foo-label-default" for="password">Password</label>
+			<input id="password" class="foo-field-default foo-field-password" type="password" name="password" />
+		</li>
+	</ul>
+
+	<!-- button -->
+
+	<button class="foo-button-default foo-button-submit" type="submit" name="submit">Submit</button>
+	<button class="foo-button-default foo-button-reset" type="reset" name="reset">Reset</button>
+</form>
+```
+#### CSS
+```css
+/**
+ * @tableofcontents
+ *
+ * 1. form
+ */
+
+/** @section 1. form */
+
+.foo-form-default {
+}
+
+.foo-field-default {
+}
+
+.foo-button-default {
+}
+```
