@@ -242,3 +242,12 @@ Abstract color variables contain a light or dark suffix extension:
 	--color-primary-dark: color(var(--color-primary) l(30%));
 }
 ```
+### Variable Fonts
+#### Fonts
+```css
+:root {
+	--font-primary: arial, sans-serif;
+	--font-code: monospace, arial, sans-serif;
+	--font-icon: icon;
+}
+```
