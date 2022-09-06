@@ -437,3 +437,83 @@ Different examples based on the NCSS convention.
 .foo-button-default {
 }
 ```
+## Tools
+### Node Linter
+
+#### Installation
+Install on your system:
+```npm install ncss-linter --global --unsafe-perm=true```
+
+#### Setup
+Create a config file:
+```json
+{
+	"html": null,
+	"path": null,
+	"url": null,
+	"namespace": null,
+	"separator": "-",
+	"selector": "*",
+	"logLevel": "warn",
+	"thresholdError": 0,
+	"thresholdWarn": 0,
+	"haltOnError": false,
+	"haltOnWarn": false
+}
+```
+#### Usage
+Run the command:
+```ncss-linter [options]```
+```
+-V, --version
+-C, --config <config>
+-H, --html <html>
+-P, --path <path>
+-U, --url <url>
+-N, --namespace <namespace>
+-E, --separator <separator>
+-S, --selector <selector>
+-L, --log-level <log-level>
+-V, --threshold-error <threshold-error>
+-W, --threshold-warn <threshold-warn>
+-Y, --halt-on-error   
+-Z, --halt-on-warn
+-h, --help
+```
+
+### Grunt Linter
+
+#### Installation
+```npm install grunt-ncss-linter```
+#### Usage
+Load the task:
+```grunt.loadNpmTasks('grunt-ncss-linter');```
+<p>Config the task:</p>
+
+
+```js
+grunt.initConfig(
+{
+	ncsslint:
+	{
+		name:
+		{
+			options:
+			{
+				config: '.ncsslintrc',
+				html: null,
+				path: null,
+				url: null,
+				namespace: null,
+				separator: '-',
+				selector: '*',
+				logLevel: 'warn',
+				thresholdError: 0,
+				thresholdWarn: 0,
+				haltOnError: false,
+				haltOnWarn: false
+			}
+		}
+	}
+});
+```
