@@ -167,3 +167,33 @@ Position related syntax:
 | -last   | *   | .item-last   |
 | -odd    | *   | .item-odd    |
 | -even   | *   | .item-even   |
+
+### Functional Classes
+Functional classes using pure CSS are marked with the is, no, has and fn prefix. JavaScript enhanced and therefore reusable classes on the other hand can be identified by the js prefix. Each of them should never have styles for painting.
+
+#### Syntax
+Pure CSS related syntax:
+```
+.is-{state}
+
+.has-{context}
+
+.no-{feature}
+
+.fn-{action}
+```
+JavaScript related syntax:
+```
+.js-{action}
+
+.js-{context}
+```
+
+#### Overview
+| Prefix | Tag | Example      |
+|--------|-----|--------------|
+| is-    | *   | .is-active   |
+| has-   | *   | .has-tooltip |
+| no-    | *   | .no-webgl    |
+| fn-    | *   | .fn-clearfix |
+| js-    | *   | .js-click    |
