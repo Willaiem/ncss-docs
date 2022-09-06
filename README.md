@@ -15,3 +15,29 @@ A predictable grammar for CSS that provides semantic information about the HTML 
 - What tags, components and sections are affected
 - What is the relation of one class to another
 
+## Class Basics
+
+Named Cascading Style Sheets are divided into:
+
+- Namespaces
+- Structural Classes
+- Component Classes
+- Type Classes
+- Modifier Classes
+- Functional Classes
+- Exceptions
+
+### Namespaces
+Pick a namespace once you provide your library to a third party or need to prevent naming conflicts inside your project.
+Syntax
+
+```
+.{namespace}-{context}
+
+.{namespace}-{type}
+```
+
+#### Overview
+| Prefix       | Tag | Example   |
+|--------------|-----|-----------|
+| {namespace}- | *   | .foo-main |
