@@ -81,3 +81,48 @@ Component classes provide a group context for the underlying elements and are pr
 | Prefix       | Tag | Example   |
 |--------------|-----|-----------|
 | component- | *   | .component-accordion |
+
+### Type Classes
+Type classes are the foundation for **reusable**, **modular** and **semantic** CSS to provide the reader what elements, tags and sections are affected.
+
+#### Syntax
+```
+.{type}
+
+.{type}-{name}
+
+.{type}-{context}
+```
+
+#### Overview
+| Prefix  | Tag                               | Example          |
+|---------|-----------------------------------|------------------|
+| address- | address                          | .address-content |
+| audio-   | audio, object                    | .audio-content   |
+| box-     | div                              | .box-content     |
+| break-   | hr                               | .break-content   |
+| button-  | a, button                        | .button-content  |
+| caption- | caption                          | .capiton-content |
+| code-    | code, pre                        | .code-content    |
+| col-     | td, th                           | .col-content     |
+| data-   | datalist                          | .data-content    |
+| field-  | input, select, textarea           | .field-content   |
+| form-   | form                              | .form-content    |
+| frame-  | iframe                            | .frame-content   |
+| image-  | canvas, img, object, picture, svg | .image-content   |
+| item-   | dd, dt, li                        | .item-content    |
+| label-  | label                             | .label-content   |
+| link-     | a                               | .link-content     |
+| list-     | dt, ol, ul                      | .list-content     |
+| modal-    | div                             | .modal-content    |
+| overlay-  | div                             | .overlay-content  |
+| progress- | progress                        | .progress-content |
+| quote-    | blockquote, citie               | .quote-content    |
+| set-      | fieldset                        | .set-content      |
+| shape-    | circle, path, rect, symbol, use | .shape-content    |
+| legend- | legend                            | .legend-content  |
+| table- | table                      | .table-content    |
+| row-   | tr                         | .row-content      |
+| text-  | em, small, span, strong, p | .text-content     |
+| title- | h1, h2, h3, h4, h5, h6     | .title-content    |
+| video- | object, video              | .progress-content |
