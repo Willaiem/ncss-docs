@@ -251,3 +251,15 @@ Abstract color variables contain a light or dark suffix extension:
 	--font-icon: icon;
 }
 ```
+### Variable Queries
+#### Queries
+
+```css
+@custom-media --media-small-max (max-width: 29.999em);
+@custom-media --media-small-min (min-width: 30em);
+@custom-media --media-medium-max (max-width: 49.999em);
+@custom-media --media-medium-min (min-width: 50em);
+@custom-media --media-large-max (max-width: 79.999em);
+@custom-media --media-large-min (min-width: 80em);
+@custom-media --media-retina (min-resolution: 192dpi);
+```
