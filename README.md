@@ -126,3 +126,44 @@ Type classes are the foundation for **reusable**, **modular** and **semantic** C
 | text-  | em, small, span, strong, p | .text-content     |
 | title- | h1, h2, h3, h4, h5, h6     | .title-content    |
 | video- | object, video              | .progress-content |
+
+
+### Modifier Classes
+There is no limitation to extend your type classes with individual state, size and position modifier. Proper handling of context and type should prevent the need of adjoining classes.
+
+#### Syntax
+State related syntax:
+```
+.{type}-{state}
+
+.{type}-{context}-{state}
+```
+Size related syntax:
+```
+.{type}-{size}
+
+.{type}-{context}-{size}
+```
+Position related syntax:
+```
+.{type}-{position}
+
+.{type}-{context}-{position}
+```
+
+#### Overview
+| Suffix  | Tag | Example      |
+|---------|-----|--------------|
+| -active | *   | .item-active |
+| -idle   | *   | .item-idle   |
+| -hover  | *   | .item-hover  |
+| -touch  | *   | .item-touch  |
+| -small  | *   | .item-small  |
+| -medium | *   | .item-medium |
+| -large  | *   | .item-large  |
+| -first  | *   | .item-first  |
+| -second | *   | .item-second |
+| -third  | *   | .item-third  |
+| -last   | *   | .item-last   |
+| -odd    | *   | .item-odd    |
+| -even   | *   | .item-even   |
