@@ -42,3 +42,25 @@ Pick a namespace once you provide your library to a third party or need to preve
 | Prefix       | Tag | Example   |
 |--------------|-----|-----------|
 | {namespace}- | *   | .foo-main |
+
+### Structural Classes
+Structural classes provide a semantic context for the underlying elements and are preferably utilized to define a layout.
+
+#### Syntax
+```
+.{context}
+
+.{context}-{name}
+```
+
+#### Overview
+| Tag     | Example     |
+|---------|-------------|
+| article | .content    |
+| body    | .body       |
+| footer  | .footer     |
+| header  | .header     |
+| main    | .main       |
+| nav     | .navigation |
+| section | .section    |
+| aside   | .sidebar    |
