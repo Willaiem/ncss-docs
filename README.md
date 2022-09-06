@@ -218,3 +218,27 @@ There are exceptions that are not following the specifications.
 | Prefix | Tag | Example      |
 |--------|-----|--------------|
 | wrapper-| * | .wrapper-body
+
+## Variables - Basics
+A variables guideline based on the latest CSS4 specification and parts of the PostCSS ecosystem.
+
+### Variable Colors
+
+#### Colors
+The color palette is a set of fixed hex values:
+```css
+:root {
+	--color-primary: #ff3300;
+	--color-secondary: #6600ff;
+	--color-tertiary: #cc0033;
+}
+```
+#### Abstracts
+
+Abstract color variables contain a light or dark suffix extension:
+```css
+:root {
+	--color-primary-light: color(var(--color-primary) l(70%));
+	--color-primary-dark: color(var(--color-primary) l(30%));
+}
+```
