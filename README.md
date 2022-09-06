@@ -197,3 +197,24 @@ JavaScript related syntax:
 | no-    | *   | .no-webgl    |
 | fn-    | *   | .fn-clearfix |
 | js-    | *   | .js-click    |
+
+### Exceptions
+There are exceptions that are not following the specifications.
+
+#### Syntax
+```
+.wrapper
+
+.wrapper-{name}
+
+.wrapper-{context}
+
+.wrapper-{component}
+
+.wrapper-{type}
+```
+
+#### Overview
+| Prefix | Tag | Example      |
+|--------|-----|--------------|
+| wrapper-| * | .wrapper-body
