@@ -68,7 +68,7 @@ Structural classes provide a semantic context for the underlying elements and ar
 ### Component Classes
 Component classes provide a group context for the underlying elements and are preferably utilized to define a working unit.
 
-### Syntax
+#### Syntax
 ```
 .component
 
@@ -77,7 +77,7 @@ Component classes provide a group context for the underlying elements and are pr
 .component-{context}
 ```
 
-### Overview
+#### Overview
 | Prefix       | Tag | Example   |
 |--------------|-----|-----------|
 | component- | *   | .component-accordion |
