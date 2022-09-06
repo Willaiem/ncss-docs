@@ -64,3 +64,20 @@ Structural classes provide a semantic context for the underlying elements and ar
 | nav     | .navigation |
 | section | .section    |
 | aside   | .sidebar    |
+
+### Component Classes
+Component classes provide a group context for the underlying elements and are preferably utilized to define a working unit.
+
+### Syntax
+```
+.component
+
+.component-{name}
+
+.component-{context}
+```
+
+### Overview
+| Prefix       | Tag | Example   |
+|--------------|-----|-----------|
+| component- | *   | .component-accordion |
