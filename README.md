@@ -263,3 +263,27 @@ Abstract color variables contain a light or dark suffix extension:
 @custom-media --media-large-min (min-width: 80em);
 @custom-media --media-retina (min-resolution: 192dpi);
 ```
+
+## Units
+### Unit Basics
+
+A units guideline based on working in 0.125 steps, a magic number like π in the world of CSS.
+### Why
+
+Nested HTML elements with relative units are going to lead to odd PX values.
+### Goal
+
+A simplified management for spaces and dimensions of HTML elements.
+
+### Unit Steps
+#### Overview
+| Factor | Value |
+|--------|-------|
+| 1      | 0.125 |
+| 2      | 0.25  |
+| 3      | 0.375 |
+| 4      | 0.5   |
+| 5      | 0.625 |
+| 6      | 0.75  |
+| 7      | 0.875 |
+| 8      | 1     |
